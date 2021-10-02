@@ -5,13 +5,16 @@
 <html lang="en">
 <head>
  <meta charset="UTF-8">
- <title>Simple JavaScript Snake Game| Webdevtrick.com</title>
+ <title>snake game By Alex Kopecky</title>
  
  <style>
- canvas {
+ body {
+            background-image: url("https://images-na.ssl-images-amazon.com/images/I/A1RJlwhmgKL.jpg");
+         }
+canvas {
  display: block;
  position: absolute;
- border: 5px solid  #009BFF;
+ border: 5px solid  #0f0;
  margin: auto;
  top: 0;
  bottom: 0;
@@ -20,7 +23,8 @@
  }
  </style>
 </head>
-<body>
+<body> <h2> by Alex Kopecky</h2> <a href="https://amzn.to/3D0PlMm" >If you want to give me money, click this and buy something</a>
+
 <script>
 var
 COLS = 40,
@@ -244,17 +248,17 @@ function draw() {
  ctx.fillStyle = "#fff";
  break;
  case SNAKE:
- ctx.fillStyle = "#333";
+ ctx.fillStyle = "#0f0";
  break;
  case FRUIT:
- ctx.fillStyle = "#009BFF";
+ ctx.fillStyle = "#f00";
  break;
  }
  ctx.fillRect(x*tw, y*th, tw, th);
  }
  }
  
- ctx.fillStyle = "#000";
+ ctx.fillStyle = "#00f";
  ctx.fillText("SCORE: " + score, 10, canvas.height-10);
 }
  
