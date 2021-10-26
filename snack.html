@@ -152,7 +152,7 @@ function main() {
  
  
 function init() {
- score = 1;
+ score = 0;
  
  grid.init(EMPTY, COLS, ROWS);
  
@@ -221,7 +221,7 @@ function update() {
  
  if (grid.get(nx, ny) === FRUIT) {
  
- score++;
+ score+=1;
  setFood();
  } else {
  
